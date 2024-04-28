@@ -8,6 +8,12 @@ body{
     overflow-x: hidden;
 }
 
+body > div {
+    height: 614px;
+    width: 100%;
+    border: 1px solid beige;
+}
+
 body::-webkit-scrollbar{
     display: none;
 }
@@ -21,9 +27,10 @@ body::-webkit-scrollbar{
     top: 0px;
     height: 40px;
     width: 100%;
-    padding-top: 10px;
+    padding-top: 15px;
     background-color: #3D3B40;
     box-shadow: 5px 10px 18px #2a282c;
+    border: none;
     position: fixed;
     z-index: 900;
 }
@@ -37,17 +44,14 @@ a:link, a:visited, a:hover, a:active{
     font-family: montserrat;
     font-size: 20px;
     text-decoration: none;
-    background-color: transparent;
     color: #BFCFE7;
     margin-left: 10px;
     margin-right: 10px;
+    display: inline-block;
 }
 
 .home{
-    height: 614px;
-    width: 100%;
     contain: content;
-    border: 1px solid beige;
 }                
 
 .intro > p{
@@ -69,75 +73,14 @@ a:link, a:visited, a:hover, a:active{
     padding-left: 60px;
 }
 
-.nav-scroll-logo{
-    height: 120px;
-    width: 30px;
-    top: 70px;
-    right: 30px;
-    position: absolute;
-}
-.circle1{
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    left: 5px;
-    border: 2px solid #525CEB;
-    background-color: #525CEB;
-    border-radius: 50px;
-}
-
-.line1{
-    position: absolute;
-    height: 33px;
-    width: 2px;
-    background-color: #BFCFE7;
-    top: 19px;
-    left: 14px;
-}
-
-.circle2{
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    left: 5px;
-    border: 2px solid #525CEB;
-    border-radius: 50px;
-    margin-top: 50px;
-}
-
-.line2{
-    position: absolute;
-    height: 33px;
-    width: 2px;
-    background-color: #BFCFE7;
-    top: 69px;
-    left: 14px;
-}
-
-.circle3{
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    left: 5px;
-    border: 2px solid #525CEB;
-    border-radius: 50px;
-    margin-top: 100px;
-}
-
 .skills{
-    height: 614px;
-    width: 100%;
-    border: 1px solid beige;
+    
 }
 
 .contact{
-    height: 614px;
-    width: 100%;
-    border: 1px solid beige;
+    
 }
 
 .about{
-    height: 614px;
-    width: 100%;
-    border: 1px solid beige;
+    
 }
