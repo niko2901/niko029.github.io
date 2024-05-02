@@ -1,6 +1,5 @@
 html{
     scroll-behavior: smooth;
-    scroll-snap-type: both mandatory;
 }
 body{
     background-color: #3D3B40;
@@ -13,7 +12,6 @@ body > div {
     height: 614px;
     width: 100%;
     border: 1px solid beige;
-    scroll-snap-align: center;
 }
 
 body::-webkit-scrollbar{
@@ -77,6 +75,25 @@ a:link, a:visited, a:hover, a:active{
 
 .skills{
     
+}
+
+.skills > div > p{
+    font-family: montserrat;
+}
+
+progress{
+    border-radius: 7px;
+    width: 30%;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #BFCFE7;
+    border-radius: 7px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #525CEB;
+    border-radius: 7px;
 }
 
 .contact{
