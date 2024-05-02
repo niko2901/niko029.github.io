@@ -73,27 +73,42 @@ a:link, a:visited, a:hover, a:active{
     padding-left: 60px;
 }
 
-.skills{
-    
+.skill_container{
+    height: 100%;
+    width: 100%;
+    contain: content;
+    padding-top: 110px;
 }
 
-.skills > div > p{
+.skill_container > div{
+    position: relative;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.skill_container > div > p{
     font-family: montserrat;
+    margin: 0px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+
 }
 
 progress{
-    border-radius: 7px;
-    width: 30%;
+    border-radius: 5px;
+    width: 350px;
+    margin-left: 10px;
+    margin-right: 40px;
 }
 
 progress::-webkit-progress-bar {
     background-color: #BFCFE7;
-    border-radius: 7px;
+    border-radius: 5px;
 }
 
 progress::-webkit-progress-value {
     background-color: #525CEB;
-    border-radius: 7px;
+    border-radius: 5px;
 }
 
 .contact{
