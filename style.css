@@ -1,120 +1,57 @@
-html{
-    scroll-behavior: smooth;
-}
-body{
-    background-color: #3D3B40;
-    margin: 0px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-body > div {
-    height: 614px;
-    width: 100%;
-    border: 1px solid beige;
+body {
+    min-height: 100vh;
+    background-color: #615EFC;
 }
 
-body::-webkit-scrollbar{
-    display: none;
-}
-
-@font-face {
-    font-family: montserrat;
-    src: url(/font/Montserrat/Montserrat-VariableFont_wght.ttf);
-}
-
-.heading{
-    top: 0px;
-    height: 40px;
-    width: 100%;
-    padding-top: 15px;
-    background-color: #3D3B40;
-    box-shadow: 5px 10px 18px #2a282c;
-    border: none;
+.header {
     position: fixed;
-    z-index: 900;
-}
-
-.heading > .navigation{
-    margin: auto;
-    width: fit-content;
-}
-
-a:link, a:visited, a:hover, a:active{
-    font-family: montserrat;
-    font-size: 20px;
-    text-decoration: none;
-    color: #BFCFE7;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: inline-block;
-}
-
-.home{
-    contain: content;
-}                
-
-.intro > p{
-    font-family: montserrat;
-    color: white;
-    font-size: 60px;
-    font-weight: 500;
-    padding-left: 60px;
-    margin-top: 200px;
-    margin-bottom: 10px;
-}
-
-.intro > pre{
-    font-family: montserrat;
-    color: #BFCFE7;
-    margin-top: 0px;
-    font-size: 15px;
-    font-weight: 300;
-    padding-left: 60px;
-}
-
-.skill_container{
-    height: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
     width: 100%;
-    contain: content;
-    padding-top: 110px;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-.skill_container > div{
+.logo {
+    font-size: 32px;
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a {
     position: relative;
-    display: inline-block;
-    margin-top: 100px;
+    font-size: 18px;
+    color: #EEEEEE;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
 }
 
-.skill_container > div > p{
-    font-family: montserrat;
-    margin: 0px;
-    margin-bottom: 5px;
-    margin-left: 20px;
-
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #EEEEEE;
+    transition: .3s; 
 }
 
-progress{
-    border-radius: 5px;
-    width: 350px;
-    margin-left: 10px;
-    margin-right: 40px;
-}
-
-progress::-webkit-progress-bar {
-    background-color: #BFCFE7;
-    border-radius: 5px;
-}
-
-progress::-webkit-progress-value {
-    background-color: #525CEB;
-    border-radius: 5px;
-}
-
-.contact{
-    
-}
-
-.about{
-    
+.navbar a:hover::before {
+    width: 100%;
 }
