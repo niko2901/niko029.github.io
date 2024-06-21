@@ -77,3 +77,10 @@ body {
 
 .description > p, h1 {
 }
+
+.jio {
+    border-radius: 100%;
+    height: 400px;
+    margin: 30px;
+    border: 10px gold double;
+}
