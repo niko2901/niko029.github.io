@@ -18,8 +18,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 20px 50px;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -54,4 +55,25 @@ body {
 
 .navbar a:hover::before {
     width: 100%;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    width: fit-content;
+    contain: content;
+    width: 50px;
+    min-width: 400px;
+    border: 1px solid;
+}
+
+.description > p, h1 {
 }
