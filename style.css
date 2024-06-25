@@ -13,7 +13,7 @@ html {
 
 body {
     min-height: 100vh;
-    background: linear-gradient(to bottom, #7E8EF1 0% , #615EFC 50%, #cc00ff 100%) ;
+    background: linear-gradient(to bottom, #7E8EF1 0% , #615EFC 20%, #9F70FD 40%, #7F27FF 60%) ;
 }
 
 ::-webkit-scrollbar {
@@ -86,19 +86,25 @@ progress::-webkit-progress-value {
 .home {
     height: 100vh;
     width: 100%;
-    padding: 100px;
+    padding: 110px;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: space-around;
     flex-flow: row nowrap;
-    border: 1px solid;
     contain: content;
 }
 
-#sherwin > img , #home > img{
-    height: 80%;
-    border-radius: 40%;
-    margin: 50px;
+#home > img{
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: 0 0 20px 15px #615EFC;
+}
+
+#sherwin > img {
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: 0 0 15px 10px #cc00ff;
+
 }
 
 .description {
@@ -134,7 +140,7 @@ progress::-webkit-progress-value {
 
 .skills > h1 {
     font-size: 40px;
-    color: #EEEEEE;
+    color: #EEEEEE; 
 }
 
 .skill-prog {
@@ -160,13 +166,30 @@ progress::-webkit-progress-value {
     justify-content: center;
 }
 
-.skill-she {
-    width: 50%;
-    display: inline-flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+.skills-she {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    
+    padding: 40px;
+    justify-content: center;  
+    margin-left: 100px;
+    margin-top: 200px;
 }
+.skills-she > h1{
+    font-size: 40px;
+    color: #EEEEEE; 
+}
+.skills-she > ul{
+    height: 100vh;
+    width: 50%;
+    flex-flow: row wrap;
+    align-items: center;  
+    color: #EEEEEE; 
+    font-size: 30px;
+}
+
 
 .label-name, .percentage {
     display: inline-flex;
@@ -182,4 +205,53 @@ progress::-webkit-progress-value {
 .percentage {
     width: 40px;
     margin: 10px 0px 10px 10px;
+}
+
+.socials {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-nav {
+    flex-flow: row;
+    justify-content: left;
+    align-items: center;
+}
+.icon {
+    height: 40px;
+    margin-top: 10px;
+    margin-inline: 10px;
+}
+
+.socials > button{
+    font-weight: bold;
+    height: 50px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 25px;
+    background-color: #EEEEEE;
+    border: 5px solid #615EFC;
+}
+
+.sherwin-socials {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sherwin-socials > button{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    font-size: 15px;
+    border: 3px solid #cc00ff;
+}
+
+.contact {
+    height: 100vh;
+    width: 100%;
+    padding: 100px;
 }
