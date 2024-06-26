@@ -16,7 +16,7 @@
         }
 
         body{
-            background-color: #cc00ff;
+            background: linear-gradient(to bottom, #7E8EF1 0% , #615EFC 20%, #9F70FD 40%, #7F27FF 60%) ;
         }
 
         .header {
@@ -68,32 +68,108 @@
             width: 100%;
             
         }
-        .description {
-            border-radius: 30px;
-            width: 45%;
-            contain: content;
-            padding: 10px;
-    
-        }
-        .description > h1{
-            font-size: 40px;
-            color: #EEEEEE;
-        }
-        .description > p{
-            font-size: 20px;
-            color: #EEEEEE;
-        }
-        .selfintro{
+
+        .aboutsher{
             height: 100vh;
             width: 100%;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            padding: 40px;
-            justify-content: center;
-
+            padding: 70px;
         }
 
+        .maindiv{
+            border-radius: 30px;
+            background-color: #eeeeee;
+            height: 100%;
+            margin: 30px;
+        }
+        .aboutsher>.maindiv >.picnishe{
+            border-radius: 40%;
+            background-color: #EEEEEE;
+            height: 80%;
+            width: 40%;
+            float: left;
+        }
+        .picnishe>img{
+            width: 100%;
+            height: 100%;
+        }
+        .maindiv >.description{
+            padding-top: 30px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            background-color: #261b81;
+            height: 100%;
+            width: 60%;
+            float: right;
+        }
+
+        .maindiv > .description> p{
+            width: 100%;
+            text-align: justify;
+            text-indent: 10%;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            
+        }
+        .maindiv >.description>h1{
+            color: white;
+            font-size: 55px;
+            text-align: center;
+        }
+        .aboutshesocials {
+         display: flex;
+         flex-flow: row;
+         justify-content: center;
+         align-items: center;
+        }
+        .picnishe> h2{
+            color: #261b81;
+            font-size: 30px;
+            text-align: center;
+
+        }
+        .aboutshesocials > button{
+         height: 40px;
+         width: 150px;
+         border-radius: 20px;
+         font-size: 15px;
+         border: 3px solid #cc00ff;
+        }
+        .icon {
+        height: 40px;
+        margin-top: 10px;
+        margin-inline: 10px;
+        
+        }
+        .album{
+            height: 100%;
+            width: 100%;
+        }
+
+        .album> .albumnishe{
+            border-radius: 30px;
+            border: #261b81;
+            border-style: solid;
+            border-width: 2px;
+            height: 40%;
+            width:50%;
+            overflow-y: scroll;
+            display: flex;
+            flex-flow: column;
+        }
+        .albumnishe > img{
+            width: 100%;
+        }
+
+
+        .achievements{
+            height:100px;
+            width: 100px;
+            background-color: #261b81;
+        }
+        
     </style>
 </head>
 <body>
@@ -106,18 +182,49 @@
             <a href="index.html#contact">Contact</a>
         </nav>
     </header>
-    
-    <section class="selfintro">
-    <section class="aboutme" id="sherwin">
-        <img src="images/sherwin-v2.png" alt="">
-        <div class="description">
-            <h1>Sherwin Rhafael A. Sarmiento</h1>
-            <p>I'm a first year student of department of compter science that loves computer and arts. 
-                I am 19 years old born in december 26.
-            </p> 
+
+<section class="aboutsher">
+        <div  class="maindiv">
+            <div class="picnishe">
+                <img src="images/sherwin-v2.png" alt="">
+                    <div class = "aboutshesocials">
+                    <a href="https://www.facebook.com/sherwin.sarmiento.5477"><img src="icons/facebook.png" alt="facebook" class="icon"></a>
+                    <a href="https://www.instagram.com/rapapyamero/"><img src="icons/instagram.png" alt="instagram" class="icon"></a>
+                    <a href="https://x.com/Rapapsarmiento"><img src="icons/twitter.png" alt="facebook" class="icon"></a>
+                    <a href="https://www.tiktok.com/@wrapup26"><img src="icons/tik-tok.png" alt="" class="icon"></a>
+                    </div>
+                    
+            </div>
+
+            <div class = "description">
+                <h1>Sherwin Rhafael A. Sarmiento</h1>
+                
+                <p>I'm 19 years old born on December 2004 Currently living in General trias and I am a first year student of CVSU-CCAT Currenlty taking <b>Bachelor of science in Computer Science.</b></p>
+                
+                <p>For my wellbeing, I also have hobbies such as digital arts, playing online games, and riding my motorcycle from to places that I have never been before.</p>
+                    
+                <p>I have general knowledge in coding and I am still learning how to improve my coding skills. I may face different kinds of problems as I grow up but  I will overcome it with perseverance and dedication to achieve one of my most awaited part of life, Graduating.</p>
+                
+            </div>
         </div>
-    </section>
-        
-    </section>
+    
+        </div>
+
+        <div class="achievements">
+            
+
+
+
+
+        </div>
+
+
+
+
+
+</section>
+
+
+</section>
 </body>
 </html>

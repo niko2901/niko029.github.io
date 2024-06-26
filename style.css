@@ -9,6 +9,8 @@
 
 html {
     scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
@@ -108,8 +110,8 @@ progress::-webkit-progress-value {
 }
 
 .description {
-    border-radius: 30px;
     width: 45%;
+    border-radius: 30px;
     contain: content;
     padding: 10px;
     
@@ -120,7 +122,7 @@ progress::-webkit-progress-value {
     color: #EEEEEE;
 }
 
-.description > P 
+.description > p 
 {
     text-indent: 10%;
     text-align: justify;
@@ -171,10 +173,8 @@ progress::-webkit-progress-value {
     width: 100%;
     display: flex;
     flex-flow: column;
-    
     padding: 40px;
     justify-content: center;  
-    margin-left: 100px;
     margin-top: 200px;
 }
 .skills-she > h1{
@@ -232,7 +232,7 @@ progress::-webkit-progress-value {
     font-size: 15px;
     border-radius: 25px;
     background-color: #EEEEEE;
-    border: 5px solid #615EFC;
+    border: 3px solid #615EFC;
 }
 
 .sherwin-socials {
@@ -253,5 +253,49 @@ progress::-webkit-progress-value {
 .contact {
     height: 100vh;
     width: 100%;
-    padding: 100px;
+    padding: 70px 100px;
+    display: inline-flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
 }
+
+.contact > h1{
+    text-align: center;
+    color: #EEEEEE;
+    font-size: 40px;
+}
+
+.contact-info {
+    width: 50%;
+}
+
+.contact-info > h2 {
+    font-size: 30px;
+    color: #EEEEEE;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-info > p {
+    color: white;
+    font-size: 20px;
+}
+
+.contact-us {
+    display: flex;
+    flex-flow: row;
+}
+
+.contact-form{
+    width: 50%;
+    background-color: #9F70FD;
+    border-radius: 30px;
+}
+
+.contact-form > form{
+    padding: 30px;
+    display: flex;
+    flex-flow: column;
+}
+
