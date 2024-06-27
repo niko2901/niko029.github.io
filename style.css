@@ -140,17 +140,14 @@ progress::-webkit-progress-value {
     justify-content: center;
 }
 
+.skill-set {
+    display: flex;
+    flex-flow: row;
+}
+
 .skills > h1 {
     font-size: 40px;
     color: #EEEEEE; 
-}
-
-.skill-prog {
-    height: 60%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .skill-norm {
