@@ -28,9 +28,9 @@ body {
 
 progress {
     border-radius: 7px; 
-    margin: 20px 10px;
-    width: 70%;
-    height: 27px;
+    margin-bottom: 30px;
+    width: 80%;
+    height: 17px;
     box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
 }
 
@@ -41,7 +41,8 @@ progress::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
     background-color: #F27BBD;
-    border-radius: 7px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 
 .header {
@@ -141,7 +142,12 @@ progress::-webkit-progress-value {
     flex-flow: column;
     align-items: center;
     padding: 40px;
-    justify-content: center;
+    justify-content: space-evenly;
+    border: 1px solid;
+}
+
+.skill-desc {
+    text-align: center;
 }
 
 .skill-set {
@@ -159,17 +165,33 @@ progress::-webkit-progress-value {
     align-items: center;
 }
 
-.set-1 > p {
-    color: #EEEEEE;
-}
-
-.set-2 {
+.set-1-she {
     display: flex;
     flex-flow: column;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
+
+.skill-label {
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skill-label > p {
+    color: #EEEEEE;
+}
+
+/* .set-2 {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+} */
 
 .skills > h1 {
     font-size: 40px;
@@ -189,47 +211,6 @@ progress::-webkit-progress-value {
     display: inline-flex;
     flex-flow: row nowrap;
     justify-content: center;
-}
-
-.skills-she {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    padding: 40px;
-    justify-content: center;  
-    margin-top: 200px;
-}
-
-.skills-she > h1{
-    font-size: 40px;
-    color: #EEEEEE; 
-}
-
-.skills-she > ul{
-    height: 100vh;
-    width: 50%;
-    flex-flow: row wrap;
-    align-items: center;  
-    color: #EEEEEE; 
-    font-size: 30px;
-}
-
-
-.label-name, .percentage {
-    display: inline-flex;
-    text-align: center;
-    align-items: center;
-}
-
-.label-name {
-    width: 110px;
-    margin: 10px;
-}
-
-.percentage {
-    width: 40px;
-    margin: 10px 0px 10px 10px;
 }
 
 .socials {
@@ -308,18 +289,54 @@ progress::-webkit-progress-value {
 }
 
 .contact-us {
+    height: 100%;
     display: flex;
     flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.contact-form{
-    width: 50%;
-    background-color: #9F70FD;
-    border-radius: 30px;
+.contact-form {
+    width: 40%;
+    height: 100%;
 }
 
 .contact-form > form{
-    padding: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
     display: flex;
     flex-flow: column;
+    border-radius: 10px;
+    background-color: #9F70FD;
+}
+
+input[type="submit"]{
+    border-radius: 8px;
+    width: 30%;
+    margin-inline: auto;
+}
+
+input {
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+}
+
+textarea {
+    resize: none;
+    margin-bottom: 6px;
+    border-radius: 8px;
+}
+
+/* for 1080p displays */
+@media only screen and (min-width: 1080px)
+{
+    
+}
+
+/* for 720p displays */
+@media only screen and (min-width: 720px)
+{
+    
 }
