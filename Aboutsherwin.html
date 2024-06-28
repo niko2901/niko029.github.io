@@ -16,8 +16,8 @@
         }
 
         body{
-            
-            background: linear-gradient(to bottom, #cc00ff 0%, #261b81 100%);
+            background-repeat: no-repeat;
+            background: linear-gradient(to bottom, #cc00ff 0%, #261b81 100% );
         }
 
         .header {
@@ -150,10 +150,55 @@
             margin-inline: 10px;
         }   
         .achievementmaindiv{
-            height: 50%;
-            width: 100%;
+            border-radius: 30px;
             background-color: #eeeeee;
+            height: 100%;
+            margin-left: 100px;
+            margin-right: 100px;
+            flex-flow: row wrap ;
+            position: relative;
+            overflow-x: hidden;
+            overflow: scroll;
+            
         }
+        .achievementmaindiv>h1{
+            
+            text-align: center;
+            font-size: 40px;
+            
+        }
+        .achievementmaindiv>div{
+            float: left;
+            padding: 1px;
+            width: 25%;
+            height: 35%;
+            
+        }
+        
+        .achievementmaindiv>.achipics>.pic1>img{
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+        }
+        .achievementmaindiv>.achidesc>.desc1{
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+        }
+        .achievements{
+            height :100%;
+            width :100%;
+        }
+        .achievementmaindiv>.achievement1{
+            border-radius: 30px;
+            background-color: #740505;
+            height: 100%;
+            width: 100%;
+            margin: 30px;
+            flex-flow: column;
+        }
+        
+
     </style>
 </head>
 <body>
@@ -195,11 +240,12 @@
     <section class="achievements">
         <div class = "achievementmaindiv">
             <h1>These are my achievements</h1>
-
-
-
-
-
+            <div class="achievement1">
+                
+                <div class="achiimg"><img src="images/cat lick.jpg" alt=""></div>
+                <div class="achides"><img src="images/cat-cat-meme.png" alt=""></div>
+                
+            </div>
         </div>
     </section>
 
