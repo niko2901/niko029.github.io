@@ -16,10 +16,9 @@
         }
 
         body {
-            background-color: #ADD899;
+            background: linear-gradient(to bottom right, #7E8EF1 10% , #615EFC 40%, #9F70FD 70%, #7F27FF 100%);
             padding: 0;
             margin: 0;
-            overflow-y: hidden;
         }
 
         .header {
@@ -36,11 +35,22 @@
             z-index: 100;
         }
 
-        .logo {
+        .logo > p {
             font-size: 32px;
             color: #EEEEEE;
-            text-decoration: none;
             font-weight: 700;
+        }
+
+        .logo {
+            height: 60px;
+            width: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100%;
+            background: linear-gradient(to bottom right, #7E8EF1 10% , #615EFC 40%, #9F70FD 70%, #7F27FF 100%);
+            border: 1px solid #EEEEEE;
+
         }
 
         ::-webkit-scrollbar {
@@ -91,7 +101,6 @@
             width: 100%;
             padding-left: 5%;
             display: flex;
-            background-color: #99BC85;
             flex-flow: column;
             justify-content: center;
         }
@@ -109,7 +118,9 @@
 </head>
 <body>
     <header class="header">
-        <p class="logo">Logo</p>
+        <div class="logo">
+            <p>NS.</p>
+        </div>
 
         <nav class="navbar">
             <a href="index.html#home">Home</a>
@@ -119,13 +130,16 @@
     </header>
     
     <section class="base">
-        <img src="images/ngi.jpg" alt="yey">
+        <img src="images/aboutme.jpeg" alt="yey">
 
         <div class="about-me">
             <h1>Normand Pugay</h1>
             <p>- Computer Science Student</p>
             <p></p>
         </div>
+    </section>
+
+    <section>
     </section>
 
 </body>
