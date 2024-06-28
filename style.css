@@ -7,6 +7,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+p {
+    color:#EEEEEE;
+}
+
 html {
     scroll-behavior: smooth;
     margin: 0px;
@@ -28,7 +32,7 @@ progress {
     width: 70%;
     height: 27px;
     box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
-  }
+}
 
 progress::-webkit-progress-bar {
     background-color: #EEEEEE;
@@ -141,8 +145,30 @@ progress::-webkit-progress-value {
 }
 
 .skill-set {
+    width: 100%;
     display: flex;
     flex-flow: row;
+    justify-content: center;
+}
+
+.set-1 {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.set-1 > p {
+    color: #EEEEEE;
+}
+
+.set-2 {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .skills > h1 {
@@ -174,10 +200,12 @@ progress::-webkit-progress-value {
     justify-content: center;  
     margin-top: 200px;
 }
+
 .skills-she > h1{
     font-size: 40px;
     color: #EEEEEE; 
 }
+
 .skills-she > ul{
     height: 100vh;
     width: 50%;
@@ -295,4 +323,3 @@ progress::-webkit-progress-value {
     display: flex;
     flex-flow: column;
 }
-
