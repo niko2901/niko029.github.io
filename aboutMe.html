@@ -101,7 +101,7 @@
 
         .about-me {
             height: 100%;
-            width: 60%;
+            width: 55%;
             padding-left: 3%;
             display: flex;
             flex-flow: column;
@@ -137,32 +137,39 @@
             font-size: 50px;
         }
 
-        .gallery {
-            height: 60%;
-            width: 70%;
-            display: flex;
-            overflow-y: scroll;
-            flex-flow: column;
-            contain: content;
-        }
-
-        .gallery:-webkit-scrollbar-track {
-            display: none;
-        }
-
         .awards {
-            height: 90%;
+            width: 70%;
+            height: 85%;
             display: flex;
             flex-flow: row;
-            margin-bottom: 5px;
-            border-radius: 8px;
-            background-color: #7E8EF1;
-            contain: content;
+            justify-content: space-evenly;
+            align-items: center;
         }
 
-        .awards > img {
-            height: 140%;
+        .image-shell {
+            display: flex;
+            flex-flow: column;
+            height: 95%;
+            width: 35%;
+            background-color: #7E8EF1;
+            align-items: center;
+            justify-content: flex-start;
+            border-radius: 30px;
+            box-shadow: 0 0 15px 10px #615EFC;
         }
+
+        .image-shell > img {
+            width: 65%;
+            margin: 40px 0px 10px 0px;
+            border-radius: 30px;
+        }
+
+        .image-shell > p {
+            width: 80%;
+            text-indent: 10%;
+            text-align: justify;
+        }
+
     </style>
 
 </head>
@@ -204,12 +211,19 @@
 
     <section class="achievements">
         <h1>My Achievements</h1>
-        
+
         <div class="awards">
-            <img src="images/intrams.jpg" alt="">
-            <p></p>
+            <div class="image-shell">
+                <img src="images/graduation.jpg" alt="">
+                <h1>July 3, 2023</h1>
+                <p>- Graduated from Rosario Institute with High honors.</p>
+            </div>
+            <div class="image-shell">
+                <img src="images/intrams1.jpg" alt="">
+                <h1>Intrams 2019</h1>
+                <p>- Awarded as Best in Casual Wear</p>
+            </div>
         </div>
     </section>
-
 </body>
 </html>

@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    color: #EEEEEE;
+}
+
+p {
+    color:#EEEEEE;
+}
+
+html {
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom left, #7E8EF1 0% , #615EFC 40%, #9F70FD 70%, #7F27FF 90%) ;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.header {
+    position: fixed;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo > p {
+    font-size: 32px;
+    color: #EEEEEE;
+    font-weight: 700;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background: linear-gradient(to bottom right, #7E8EF1 10% , #615EFC 40%, #9F70FD 70%, #7F27FF 100%);
+    border: 1px solid #EEEEEE;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #EEEEEE;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #EEEEEE;
+    transition: .3s; 
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.home {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    width: 100%;
+    padding: 100px 100px 60px 100px;
+}
+
+.gallery {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery > img {
+    height: 320px;
+    margin-inline: 10px;
+}
+
+.description {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 100%;
+}
+
+.description > p {
+    text-align: justify;
+    text-indent: 10%;
+}
+
+.description > button {
+    font-size: 15px;
+    height: 50px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 35px;
+    border: 3px solid #615EFC;
+}
+
+.home2 {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    width: 100%;
+    padding: 80px 100px 60px 100px;
+}
+
+.film {
+    display: flex;
+    align-self: center;
+    height: 85%;
+    width: 70%;
+}
+
+.film > iframe {
+    height: 405px;
+    width: 1280px;
+}
+
+.description2 > p {
+    text-align: justify;
+    text-indent: 10%;
+}
