@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Me</title>
     
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -19,6 +19,10 @@
             background: linear-gradient(to bottom right, #7E8EF1 10% , #615EFC 40%, #9F70FD 70%, #7F27FF 100%);
             padding: 0;
             margin: 0;
+        }
+
+        h1, p{
+            color: #EEEEEE;
         }
 
         .header {
@@ -50,10 +54,9 @@
             border-radius: 100%;
             background: linear-gradient(to bottom right, #7E8EF1 10% , #615EFC 40%, #9F70FD 70%, #7F27FF 100%);
             border: 1px solid #EEEEEE;
-
         }
 
-        ::-webkit-scrollbar {
+        body::-webkit-scrollbar {
             display: none;
         }
 
@@ -87,8 +90,8 @@
             display: inline-flex;
             flex-flow: row;
             contain: content;
-            border: 1px solid;
             align-items: center;
+            padding-right: 40px;
         }
         
         .base > img {
@@ -98,8 +101,8 @@
 
         .about-me {
             height: 100%;
-            width: 100%;
-            padding-left: 5%;
+            width: 60%;
+            padding-left: 3%;
             display: flex;
             flex-flow: column;
             justify-content: center;
@@ -112,6 +115,52 @@
 
         .about-me > h1, p {
             color: white;
+        }
+
+        .about-me > p {
+            font-size: 18px;
+            text-align: justify;
+            text-indent: 10%;
+        }
+
+        .achievements {
+            height: 100vh;
+            width: 100%;
+            padding: 30px;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .achievements > h1 {
+            font-size: 50px;
+        }
+
+        .gallery {
+            height: 60%;
+            width: 70%;
+            display: flex;
+            overflow-y: scroll;
+            flex-flow: column;
+            contain: content;
+        }
+
+        .gallery:-webkit-scrollbar-track {
+            display: none;
+        }
+
+        .data {
+            height: 500px;
+            display: flex;
+            flex-flow: row;
+            margin-bottom: 5px;
+            border-radius: 8px;
+            background-color: #7E8EF1;
+        }
+
+        .data > img {
+            height: 100%;
         }
     </style>
 
@@ -130,16 +179,68 @@
     </header>
     
     <section class="base">
-        <img src="images/aboutme.jpeg" alt="yey">
+        <img src="images/aboutme1.jpeg" alt="yey">
 
         <div class="about-me">
-            <h1>Normand Pugay</h1>
-            <p>- Computer Science Student</p>
-            <p></p>
+            <h1>Normand Nieander M. Pugay</h1>
+            <p>I'm a college student pursuing a degree in Computer Science at Cavite State University-CCAT Campus.
+                 My academic journey has equipped me with a solid foundation in Computer Technologies, and I 
+                 am committed to applying my knowledge through hands-on projects. My education has not only 
+                 honed my analytical and critical thinking abilities but has also sparked a keen interest 
+                 in Programming.
+            </p><br>
+
+            <p>When I'm not immersed in my studies or working on tech projects, you 
+                can find me exploring the city on my bike. Biking not only offers 
+                a refreshing escape from the digital world but also challenges me 
+                physically and mentally, enhancing my focus and resilience. This blend 
+                of intellectual curiosity and a love for the outdoors defines who I am, 
+                and I am excited to bring this unique perspective to my future endeavors 
+                in the tech industry.
+            </p>
         </div>
     </section>
 
-    <section>
+    <section class="achievements">
+        <h1>My Achievements</h1>
+        
+        <div class="gallery">
+            <div class="data">
+                <img src="images/bike.jpeg" alt="escort">
+                <p>description ng picture and year if possible</p>
+            </div>
+            
+            <div class="data">
+                <img src="" alt="escort">
+                <p>description ng picture and year if possible</p>
+            </div>
+            
+            <div class="data">
+                <img src="" alt="escort">
+                <p>description ng picture and year if possible</p>
+            </div>
+            
+            <div class="data">
+                <img src="" alt="escort">
+                <p>description ng picture and year if possible</p>
+            </div>
+            
+            <div class="data">
+                <img src="" alt="escort">
+                <p>description ng picture and year if possible</p>
+            </div>
+            
+            <div class="data">
+                <img src="" alt="escort">
+                <p>description ng picture and year if possible</p>
+            </div>
+            
+            <div class="data">
+                <img src="" alt="escort">
+                <p>description ng picture and year if possible</p>
+            </div>
+            
+        </div>
     </section>
 
 </body>
