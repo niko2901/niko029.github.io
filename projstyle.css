@@ -152,3 +152,188 @@ body {
     text-align: justify;
     text-indent: 10%;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 1080px) and (orientation: portrait){
+    .header {
+        padding: 20px 20px;
+    }
+
+    progress {
+        height: 10px;
+    }
+    
+    .logo {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .logo > p {
+        font-size: 19px;
+    }
+    
+    .navbar a {
+        margin-left: 20px;
+    }
+    .home {
+        margin-top: 80px;
+        display: flex;
+        flex-flow: column;
+        height: fit-content;
+        width: 100%;
+        padding: 0px 20px;
+    }
+    
+    .gallery {
+        height: 70%;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+    }
+    
+    .gallery > img {
+        height: 180px;
+        margin-inline: 10px;
+    }
+    
+    .description {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .description > p {
+        text-align: justify;
+        text-indent: 10%;
+    }
+    
+    .description > button {
+        font-size: 15px;
+        height: 50px;
+        width: 150px;
+        font-weight: bold;
+        border-radius: 35px;
+        border: 3px solid #615EFC;
+    }
+    
+    .home2 {
+        display: flex;
+        flex-flow: column;
+        height: fit-content;
+        width: 100%;
+        padding: 0px 20px;
+        margin-top: 80px;
+    }
+    
+    .film {
+        display: flex;
+        align-self: center;
+        height: 30%;
+        width: 95%;
+    }
+    
+    .film > iframe {
+        height: 207px;
+    }
+    
+    .description2 > p {
+        text-align: justify;
+        text-indent: 10%;
+    }
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .header {
+        padding: 20px 20px;
+        }
+        
+        progress {
+            height: 10px;
+        }
+        
+        .logo {
+            height: 40px;
+            width: 40px;
+        }
+        
+        .logo > p {
+            font-size: 19px;
+        }
+        
+        .navbar a {
+            margin-left: 20px;
+        }
+        .home {
+            display: flex;
+            flex-flow: column;
+            height: 100vh;
+            width: 100%;
+            padding: 150px 10px 10px 10px;
+        }
+        
+        .gallery {
+            height: 70%;
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0px;
+        }
+        
+        .gallery > img {
+            height: 280px;
+            margin-inline: 10px;
+            margin-top: 10px;
+        }
+        
+        .description {
+            display: flex;
+            flex-flow: column;
+            height: fit-content;
+            width: 100%;
+            
+        }
+        
+        .description > p {
+            text-align: justify;
+            text-indent: 10%;
+        }
+        
+        .description > button {
+            font-size: 15px;
+            height: 50px;
+            width: 150px;
+            font-weight: bold;
+            border-radius: 35px;
+            border: 3px solid #615EFC;
+        }
+        
+        .home2 {
+            display: flex;
+            flex-flow: column;
+            height: 50%;
+            width: 100%;
+            padding: 10px 10px 50px 10px;
+        }
+        
+        .film {
+            display: flex;
+            align-self: center;
+            height: 25%;
+            width: 90%;
+        }
+        
+        .film > iframe {
+            height: 405px;
+            width: 1280px;
+        }
+        
+        .description2 > p {
+            text-align: justify;
+            text-indent: 10%;
+        }
+}

@@ -87,14 +87,15 @@
         .base {
             height: 100vh;
             width: 100%;
-            display: inline-flex;
+            display: flex;
             flex-flow: row;
             contain: content;
             align-items: center;
             padding-right: 40px;
         }
         
-        .base > img {
+        .base > img{
+            width: 45%;
             margin-top: 30px;
             height: 130%;
         }
@@ -170,6 +171,90 @@
             text-align: justify;
         }
 
+        @media only screen and (min-width: 320px) and (max-width: 1080px) and (orientation: portrait){
+            .header {
+                padding: 20px 20px;
+            }
+
+            progress {
+                height: 10px;
+            }
+            
+            .logo {
+                height: 40px;
+                width: 40px;
+            }
+            
+            .logo > p {
+                font-size: 19px;
+            }
+            
+            .navbar a {
+                margin-left: 20px;
+            }
+
+            .base {
+                display: flex;
+                height: fit-content;
+                flex-flow: column;
+                padding: 0px;
+                padding: 0px;
+            }
+
+            .base > img {
+                width: 100%;
+                margin: 0px;
+            }
+
+            .about-me {
+                height: 100%;
+                width: 95%;
+                padding: 0px;
+            }
+
+            .about-me > h1 {
+                text-align: center;
+                font-size: 30px;
+            }
+
+            .about-me > p {
+                font-size: 18px;
+            }
+
+            .achievements {
+                height: fit-content;
+                flex-flow: column;
+                padding: 0px;
+            }
+
+            .achievements > h1{
+                margin-top: 80px;
+                margin-bottom: 30px;
+                font-size: 39px;
+            }
+
+            .awards {
+                width: 100%;
+                flex-flow: column;
+            }
+
+            .image-shell {
+                height: fit-content;
+                justify-content: flex-start;
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .image-shell > img {
+                width: 90%;
+                margin: 30px 0px 0px 0px;
+            }
+
+            .image-shell > p {
+                margin-bottom: 10px;
+            }
+        }
+
     </style>
 
 </head>
@@ -181,13 +266,13 @@
 
         <nav class="navbar">
             <a href="index.html#home">Home</a>
-            <a href="#">Projects</a>
+            <a href="projects.html">Projects</a>
             <a href="index.html#contact">Contact</a>
         </nav>
     </header>
     
     <section class="base">
-        <img src="images/aboutme1.jpeg" alt="yey">
+        <img src="images/aboutme1.jpeg" alt="">
 
         <div class="about-me">
             <h1>Normand Nieander M. Pugay</h1>
