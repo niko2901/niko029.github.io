@@ -48,6 +48,7 @@ body {
     font-size: 32px;
     color: #EEEEEE;
     font-weight: 700;
+    cursor: default;
 }
 
 .logo {
@@ -169,6 +170,7 @@ body {
     
     .logo > p {
         font-size: 19px;
+        cursor: default;
     }
     
     .navbar a {
@@ -261,6 +263,7 @@ body {
         
         .logo > p {
             font-size: 19px;
+            cursor: default;
         }
         
         .navbar a {

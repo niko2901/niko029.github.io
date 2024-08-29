@@ -9,6 +9,11 @@
 
 p {
     color:#EEEEEE;
+    user-select: none;
+}
+
+h1 {
+    user-select: none;
 }
 
 html {
@@ -62,6 +67,9 @@ progress::-webkit-progress-value {
     font-size: 32px;
     color: #EEEEEE;
     font-weight: 700;
+    cursor: default;
+    user-select: none;
+
 }
 
 .logo {
@@ -233,6 +241,7 @@ progress::-webkit-progress-value {
     border-radius: 25px;
     background-color: #EEEEEE;
     border: 3px solid #615EFC;
+    cursor: pointer;
 }
 
 .sherwin-socials {
@@ -428,6 +437,8 @@ textarea {
     
     .logo > p {
         font-size: 19px;
+        cursor: default;
+        user-select: none;
     }
     
     .navbar a {
@@ -583,6 +594,8 @@ textarea {
     
     .logo > p {
         font-size: 19px;
+        cursor: default;
+        user-select: none;
     }
     
     .navbar a {
